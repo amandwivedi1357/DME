@@ -72,7 +72,7 @@ const CollaborationCards = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="text-4xl md:text-6xl lg:text-[86px] font-semibold text-center bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600">
+        <h2 className="text-4xl md:text-6xl lg:text-[86px] font-semibold text-center bg-clip-text">
           Digital·Made·Easy
         </h2>
       </motion.div>
