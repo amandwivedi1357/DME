@@ -84,7 +84,7 @@ const CollaborationCards = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         <div className="md:flex-1">
-          <p className="text-2xl md:text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600">
+          <p className="text-2xl md:text-4xl font-semibold bg-clip-text ">
             Want to Work Together?
           </p>
         </div>
@@ -96,7 +96,7 @@ const CollaborationCards = () => {
         </div>
       </motion.div>
 
-      <div className="relative" ref={ref}>
+      <div className="relative -mt-[8rem]" ref={ref}>
         <motion.div 
           className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-full max-w-[230px] h-auto z-10"
           initial={{ opacity: 0, x: -50 }}
@@ -146,10 +146,10 @@ const CollaborationCards = () => {
                   {card.points.map((point, i) => (
                     <motion.li 
                       key={i} 
-                      className="flex items-center text-gray-700 group-hover:text-gray-900 transition-colors duration-300"
+                      className="flex border-b border-gray-200 py-2 items-center text-gray-700 group-hover:text-gray-900 transition-colors duration-300"
                       whileHover={{ x: 5 }}
                     >
-                      <span className="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-2"></span>
+                      <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span>
                       {point}
                     </motion.li>
                   ))}
